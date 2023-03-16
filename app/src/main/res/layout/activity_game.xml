@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10px"
+    android:layout_gravity="center"
+    tools:context=".gameActivity">
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Welcome to the game, Guess a word!"
+        android:gravity="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/charTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_marginTop="100dp"
+        android:text="_ _ _ _ _ " />
+
+    <TextView
+        android:id="@+id/healthTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Lives left : "
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/guessET"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="guess here"
+        app:layout_constraintTop_toBottomOf="@+id/wordoTV"
+         />
+
+    <TextView
+        android:id="@+id/lengthTV"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1px"
+        android:layout_gravity="center"
+        android:text ="_ _ _"
+        android:textSize="40sp"
+
+        ></TextView>
+
+
+    <Button
+        android:id="@+id/guessBTN"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="170px"
+        android:layout_gravity="center"
+        android:text="Guess" />
+
+    <TextView
+        android:id="@+id/scoreTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="score : "
+        android:gravity="center"
+        android:textSize="24sp"/>
+</LinearLayout>
